@@ -1,10 +1,12 @@
+
  body {
  font-size: small;
  width: 100%;
  margin:0;
  padding:0;
- background-color: #ff69b4; 
+ background-color: #ff69b4;
  }
+
 
  div.fav{
   margin:0;
@@ -13,54 +15,54 @@
   background-position:center center;
   background-size:100% auto;
   background-repeat: no-repeat;
-  opacity:0.8;  
+  opacity:0.8;
  }
- 
+
 
 h1#strcolor1{
- font-family:"Yu Gothic"; 
- margin:0;
- padding:0;
- color: #e0218a;
- -webkit-text-stroke: 0.5px #fff;
+  font-family:"Yu Gothic";
+  margin:0;
+  padding:0;
+  color: #b22222;
+  -webkit-text-stroke: 0.4px #fff;
 }
 
 span#strcolor2{
- font-weight:bolder;
-  font-size: medium;
- color: #000000;
- -webkit-text-stroke: 0.6px #e0218a;  
+  font-weight:bolder;
+ font-size: medium;
+ color: #000;
+ -webkit-text-stroke: 0.6px #8b0000;
 }
 
 span#strcolor3{
   font-weight:bolder;
  font-size: medium;
  color: #000;
- -webkit-text-stroke: 0.6px #e0218a;
+ -webkit-text-stroke: 0.6px #8b0000;
 }
 
 div#div1{
   font-weight:bolder;
  font-size: medium;
- color: 000;
- -webkit-text-stroke: 0.6px #e0218a;
- 
+ color: #000;
+ -webkit-text-stroke: 0.6px #8b0000;
+
 }
 
 span#radioname1{
   font-weight:bolder;
  font-size: medium;
- color: 000;
- -webkit-text-stroke: 0.6px #e0218a;
- 
+ color: #000;
+ -webkit-text-stroke: 0.6px #8b0000;
+
 }
 
 span#radioname2{
   font-weight:bolder;
  font-size: medium;
- color: 000;
- -webkit-text-stroke: 0.6px #e0218a;
- 
+ color: #000;
+ -webkit-text-stroke: 0.6px #8b0000;
+
 }
 
 
@@ -137,7 +139,7 @@ button.btn{
 .title{
   overflow:hidden;
   text-overflow: ellipsis;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 input,
