@@ -90,6 +90,9 @@ th.A1 {
 /*歌手名*/
 th.A2{
  width: 160px;
+ overflow:hidden;
+ text-overflow: ellipsis;
+ white-space: nowrap;
 }
 
 
