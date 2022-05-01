@@ -3,7 +3,7 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
- <title>魔光リサ 配信まとめ</title>
+ <title>魔光リサ 歌まとめ</title>
  <link rel="stylesheet" href="/style.css">
 </head>
 
@@ -17,7 +17,7 @@
 <body>
  <div id="body">
   <div class="fav">
-   <h1 id="strcolor1">魔光リサ 配信まとめ</h1>
+   <h1 id="strcolor1">魔光リサ 歌まとめ</h1>
 　 <span class="strcolor2"><input type="checkbox" onchange="favdisplay()" class="checkboxA" id="checkboxA"> お気に入り</span>
    <button class="remove" id="remove" onclick="favremove()">お気に入り削除</button></br>
 
@@ -1099,27 +1099,27 @@ function fav(){
 
  //チェックボックス解除
 function favremove(){
- var favremoveconfirm = confirm("お気に入り削除しますか");
- if (favremoveconfirm){
-  for (var i = 0; i< CECounts; i++){
-   FavElements = CheckboxElements[i];
-   Favid = FavElements.getAttribute("id");
-   if (FavElements.checked == true){
-    FavElements.checked = false;
-    localStorage.setItem(Favid, JSON.stringify(false));
-   } else {
-    localStorage.setItem(Favid, JSON.stringify(false));
+  var favremoveconfirm = confirm("お気に入り削除しますか");
+  if (favremoveconfirm){
+    SearcBoxElement.value = null;
+    checkboxA.checked = false;
+    for (var i = 0; i< CECounts; i++){
+      FavElements = CheckboxElements[i];
+      Favid = FavElements.getAttribute("id");
+      if (FavElements.checked == true){
+        FavElements.checked = false;
+        localStorage.setItem(Favid, JSON.stringify(false));
+      } else {
+        localStorage.setItem(Favid, JSON.stringify(false));
+      }
+    }
+    if (category2.value == "non" || category2.selectedIndex == 0){
+      changeCategory();
+    } else {
+      changeCategory2();
+    }
    }
-  }
-  if (category2.value == "non" || category2.selectedIndex == 0){
-   changeCategory();
-  } else {
-   changeCategory2();
-  }
-  SearcBoxElement.value = null;
-  checkboxA.checked = false;
  }
-}
 
 //曲検索用
 function songsearch(){
