@@ -72,6 +72,12 @@ th,td {
    border: solid 1px;   /* 枠線指定 */
 }
 
+.singer{
+ overflow:hidden;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+}
+
 .checkbox{
   background-color: #d89999;
   border: 0px none;
